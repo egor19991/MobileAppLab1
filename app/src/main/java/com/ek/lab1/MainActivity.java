@@ -1,9 +1,6 @@
 package com.ek.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
-
-import android.graphics.drawable.Drawable;
 import android.icu.text.SimpleDateFormat;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,7 +10,6 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -44,21 +40,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-                Spinner spinner = findViewById(R.id.spinner);
-        // Создаем адаптер ArrayAdapter с помощью массива строк и стандартной разметки элемета spinner
+        Spinner spinner = findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, locomotive);
-        // Определяем разметку для использования при выборе элемента
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Применяем адаптер к элементу spinner
         spinner.setAdapter(adapter);
 
         AdapterView.OnItemSelectedListener itemSelectedListener = new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                // Получаем выбранный объект
                 String item = (String)parent.getItemAtPosition(position);
-                //selection.setText(item);
                 TextView textView = findViewById(R.id.textView2);
                 ImageView image = (ImageView)findViewById(R.id.imageView);
                 switch (item) {
@@ -88,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         spinner.setOnItemSelectedListener(itemSelectedListener);
-
 
     }
 }
