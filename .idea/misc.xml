@@ -6,7 +6,7 @@
         <entry key="..\:/AndroidProject/Lab1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/AndroidProject/Lab1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
         <entry key="..\:/AndroidProject/Lab1/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
-        <entry key="..\:/AndroidProject/Lab1/app/src/main/res/layout/second_layout.xml" value="0.33" />
+        <entry key="..\:/AndroidProject/Lab1/app/src/main/res/layout/second_layout.xml" value="0.18" />
       </map>
     </option>
   </component>
@@ -15,5 +15,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18" />
+      </ProjectState>
+    </option>
   </component>
 </project>
